@@ -74,9 +74,6 @@ func NewCmdIter8Command() *cobra.Command {
 		{
 			Message: "Deprecated commands:",
 			Commands: []*cobra.Command{
-				// assertr.NewCmd(factory, streams),
-				// genr.NewCmd(factory, streams),
-				// runr.NewCmd(factory, streams),
 				deleter.NewCmd(factory, streams),
 			},
 		},

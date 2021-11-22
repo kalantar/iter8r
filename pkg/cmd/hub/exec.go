@@ -1,4 +1,4 @@
-package run
+package hub
 
 import (
 	"errors"
@@ -7,6 +7,10 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+)
+
+const (
+	ExperimentRequiredError = "an experiment must be specified"
 )
 
 // complete sets all information needed for processing the command
@@ -19,7 +23,7 @@ func (o *Options) complete(cmd *cobra.Command, args []string) (err error) {
 // validate ensures that all required arguments and flag values are provided
 func (o *Options) validate(cmd *cobra.Command, args []string) (err error) {
 	if o.experiment == "" {
-		return errors.New("an experiment must be specified")
+		return errors.New(ExperimentRequiredError)
 	}
 	return nil
 }

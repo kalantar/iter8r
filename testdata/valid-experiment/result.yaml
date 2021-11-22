@@ -1,0 +1,83 @@
+failure: false
+insights:
+  insightTypes:
+  - Metrics
+  metricValues:
+  - built-in/error-count:
+    - 0
+    built-in/error-rate:
+    - 0
+    built-in/max-latency:
+    - 369.526045
+    built-in/mean-latency:
+    - 44.50711434999999
+    built-in/min-latency:
+    - 20.479717
+    built-in/p50.0:
+    - 31.06060606060606
+    built-in/p75.0:
+    - 34.84848484848485
+    built-in/p90.0:
+    - 40.714285714285715
+    built-in/p95.0:
+    - 44.285714285714285
+    built-in/p99.0:
+    - 364.64453375000005
+    built-in/p99.9:
+    - 369.03789387500007
+    built-in/request-count:
+    - 100
+    built-in/stddev-latency:
+    - 66.53303998307399
+  metricsInfo:
+    built-in/error-count:
+      description: number of errors
+      type: Counter
+    built-in/error-rate:
+      description: error rate
+      type: Gauge
+    built-in/max-latency:
+      description: 'maximum observed value of latency '
+      type: Gauge
+      units: msec
+    built-in/mean-latency:
+      description: mean latency
+      type: Gauge
+      units: msec
+    built-in/min-latency:
+      description: 'minimum observed value of latency '
+      type: Gauge
+      units: msec
+    built-in/p50.0:
+      description: 50.0 percentile latency
+      type: Gauge
+      units: msec
+    built-in/p75.0:
+      description: 75.0 percentile latency
+      type: Gauge
+      units: msec
+    built-in/p90.0:
+      description: 90.0 percentile latency
+      type: Gauge
+      units: msec
+    built-in/p95.0:
+      description: 95.0 percentile latency
+      type: Gauge
+      units: msec
+    built-in/p99.0:
+      description: 99.0 percentile latency
+      type: Gauge
+      units: msec
+    built-in/p99.9:
+      description: 99.9 percentile latency
+      type: Gauge
+      units: msec
+    built-in/request-count:
+      description: number of requests
+      type: Counter
+    built-in/stddev-latency:
+      description: standard deviation of latency
+      type: Gauge
+      units: msec
+  numAppVersions: 1
+numCompletedTasks: 2
